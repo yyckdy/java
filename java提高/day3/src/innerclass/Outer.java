@@ -1,6 +1,7 @@
 package innerclass;
 
 public class Outer {
+    public int age;
     class Inner{
         private String name;
         private int age;
@@ -9,7 +10,7 @@ public class Outer {
 
         }
         public void show(){
-
+            System.out.println(Outer.this.age);
         }
     }
 }

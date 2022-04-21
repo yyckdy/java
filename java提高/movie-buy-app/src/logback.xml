@@ -30,11 +30,11 @@
             <MaxFileSize>1MB</MaxFileSize>
         </triggeringPolicy>
     </appender>
- 
+
     <!-- 日志输出级别 -->
     <root level="ALL">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>
- 
+
 </configuration>

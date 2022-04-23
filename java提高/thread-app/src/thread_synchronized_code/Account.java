@@ -1,9 +1,13 @@
 package thread_synchronized_code;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Account {
     private String cardId;
     private double money;
-
+    //唯一不可替换的
+    private final Lock lock = new ReentrantLock();
 
 
     public String getCardId() {
@@ -30,8 +34,10 @@ public class Account {
     public Account() {
     }
 
-    public void drawMoney(double money) {
+
+    public synchronized/*方法锁*/ void drawMoney(double money) {
         String name = Thread.currentThread().getName();
+        lock.lock();//上锁
         //同步代码块 线程锁
         synchronized (this) {//建议使用共享资源作为锁对象
             if (this.money >= money) {
@@ -41,6 +47,7 @@ public class Account {
             } else {
                 System.out.println(name + "来取钱余额不够");
             }
+            lock.unlock();//解锁
         }
     }
 }

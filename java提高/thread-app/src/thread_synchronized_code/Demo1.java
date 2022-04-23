@@ -5,7 +5,7 @@ package thread_synchronized_code;
  */
 public class Demo1 {
     public static void main(String[] args) {
-        //定义线程类
+        // 定义线程类
         Account acc = new Account("10086", 100000);
 
         Account acc1 = new Account("10086", 100000);
@@ -20,4 +20,3 @@ public class Demo1 {
 
     }
 }
-

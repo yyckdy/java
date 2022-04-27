@@ -10,5 +10,9 @@ public class PrintDemo2 {
         System.setOut(pr);
 
         System.out.println("hello");
+
+        System.setOut(System.out);
+
+        System.out.println("hello");
     }
 }

@@ -1,14 +1,16 @@
-package reflect_constructor;
+package reflect_filed;
 
 public class Student {
     private String name;
     private int age;
+    public static String schoolName;
+    public static final String COUNTRY = "CHINA";
 
-    private Student() {
+    public Student() {
 
     }
 
-    private Student(String name, int age) {
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }

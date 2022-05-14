@@ -1,0 +1,16 @@
+==========Student==========
+name=yy
+sex=男
+age=18
+className=2004
+hobby=no
+==========Student==========
+name=yy
+sex=男
+age=18
+className=2004
+hobby=no
+==========Teacher==========
+name=yy
+sex=男
+salary=999.99

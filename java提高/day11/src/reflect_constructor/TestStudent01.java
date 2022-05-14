@@ -42,9 +42,9 @@ public class TestStudent01 {
         Class c = Student.class;
         Constructor constructor = c.getDeclaredConstructor(String.class, int.class);// 根据参数获取构造器
         System.out.println(constructor.getName() + "===>" + constructor.getParameterCount());
-        constructor.setAccessible(true);//设置权限
+        constructor.setAccessible(true);//设置权限 暴力反射
         Student s = (Student) constructor.newInstance("yy", 100);
-        System.out.println(s.getName() + "===>" + s.getAge());
+        System.out.println(s.toString());
     }
 
 

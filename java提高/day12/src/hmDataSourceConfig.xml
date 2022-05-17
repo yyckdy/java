@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hmdatabase-config datasourcename="domain.HMDataBaseConfig">
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/day16</property>
+    <property name="user">root</property>
+    <property name="password">root</property>
+</hmdatabase-config>

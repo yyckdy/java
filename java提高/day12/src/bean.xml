@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bean className="domain.Teacher">
+    <property name="name" value="张三"></property>
+    <property name="age" value="16"></property>
+    <property name="salary" value="88888"></property>
+</bean>

@@ -5,22 +5,32 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>maven-demo</artifactId>
+    <artifactId>web-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>war</packaging>
     <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <!--导入mysql驱动jar包-->
+
+    <!--导入mysql 驱动jar包-->
     <dependencies>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.29</version>
-            <scope>test</scope>
+            <version>5.1.32</version>
+            <scope>provided</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.12</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -28,5 +38,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 </project>

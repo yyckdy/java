@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/web-demo" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/maven-demo/pom.xml" />
         <option value="$PROJECT_DIR$/maven-project/pom.xml" />
+        <option value="$PROJECT_DIR$/web-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
       </list>
     </option>
   </component>

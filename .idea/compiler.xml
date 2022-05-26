@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="maven-demo" />
+        <module name="html_demo" />
+        <module name="css_demo" />
         <module name="web-demo" />
         <module name="MyBatis" />
-        <module name="maven-demo" />
         <module name="maven-project" />
+        <module name="js-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

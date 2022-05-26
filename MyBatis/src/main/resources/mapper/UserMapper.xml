@@ -4,7 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.UserMapper">
     <select id="selectAll" resultType="pojo.User">
-        select *from  tb_user;
+        select *
+        from tb_user;
+    </select>
+    <select id="selectById" resultType="pojo.User">
+
     </select>
 
 </mapper>

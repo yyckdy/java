@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+      ==:
+          1.判断类型是否一样，如果不一样则进行类型转换
+          2.在比较转换后的值
+
+      ===:全等于
+          1.判断类型是否一样，不一样直接返回false
+          2.再去比较其值
+    */
+
+    var age1 = 20;
+    var age2 = "20"
+
+    // alert(age1==age2)
+    // alert(age1===age2)
+
+    /*
+      类型转换:
+          * 其他类型转为number:
+              1.string:按照字符串的子面值转为数字.如果字面值不是数字转为NaN
+              2.boolean:
+
+          * 其他类型转为boolean
+              1.number:0和NaN转为false，其他转为true
+              2.string:空字符串转为false，其他转为true
+              3.null
+              4.undefined
+     */
+    // var str=+"20" //+表示正号
+    // var str="20"
+    // alert(parseInt(str))
+
+    // var  flag=+false
+    // alert(flag)
+
+    // var flag = 1
+    // var flag=""
+    // //健壮性判断
+    // if (flag) {
+    //     alert("转为true")
+    // } else {
+    //     alert("转为false")
+    // }
+
+
+
+    var str="abc"
+
+    if (str) {
+        alert("转为true")
+    } else {
+        alert("转为false")
+    }
+
+
+</script>
+</body>
+</html>

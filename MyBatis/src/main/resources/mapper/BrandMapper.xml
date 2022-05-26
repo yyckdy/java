@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.BrandMapper">
+    <!--数据库表的字段名称和实体名称不一样不能自动封装数据
+        * 起别名 将别名设置为和实体类的属性名一样
+            *缺点：每次查询都要定义别名
+        *
+    -->
+
+    <!--
+        sql片段
+    -->
+    <!-- <sql id="brand_column">
+         id, brand_name brandName, company_name companyName, ordered, description, status
+     </sql>-->
+
+    <!--<select id="selectAll" resultType="pojo.Brand">
+        select *
+        from test.tb_brand;
+    </select>-->
+
+    <!-- <select id="selectAll" resultType="pojo.Brand">
+         select
+         <include refid="brand_column"/>
+         from test.tb_brand;
+     </select>-->
+
+
+    <select id="selectAll" resultMap="brandResultMap">
+        select *
+        from test.tb_brand;
+    </select>
+
+    <!--
+        id 唯一标识
+        type 映射类型
+    -->
+    <resultMap id="brandResultMap" type="pojo.Brand">
+        <!--
+            id 完成主键字段的映射
+                column 列名
+                property 属性名
+            result 一般字段的映射
+        -->
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <select id="selectById" parameterType="int" resultMap="brandResultMap">
+        select *
+        from mybatis.tb_brand
+        where id
+         <![CDATA[
+         <
+         ]]>
+         #{id};
+    </select>
+
+    <!-- <select id="selectById" parameterType="int" resultMap="brandResultMap">
+         select *
+         from mybatis.tb_brand
+         where id= #{id};
+     </select>-->
+
+    <!-- &lt;!&ndash;条件查询&ndash;&gt;
+     <select id="selectByCondition" resultMap="brandResultMap">
+         select *
+         from mybatis.tb_brand
+         where status = #{status}
+           and company_name like #{companyName}
+           and brand_name like #{brandName};
+     </select>-->
+
+
+    <!--
+        动态多条件查询
+            *test:逻辑表达式
+    -->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from mybatis.tb_brand
+        <where>
+            <if test="status !=null">
+                and status = #{status}
+            </if>
+            <if test="companyName!=null and companyName!=''">
+                and company_name like #{companyName}
+            </if>
+            <if test="brandName!=null and brandName!=''">
+                and brand_name like #{brandName};
+            </if>
+        </where>
+    </select>
+
+    <!--
+        动态单条件查询
+    -->
+    <select id="selectByConditionSingle" resultMap="brandResultMap">
+        select *from mybatis.tb_brand
+        <where>
+            <choose>
+                <when test="status!=null">
+                    status=#{status}
+                </when>
+                <when test="companyName!=null and companyName!=''">
+                    company_name like #{companyName}
+                </when>
+                <when test="brandName!=null and brandName!=''">
+                    brand_name like {brandName}
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <!--添加数据-->
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into mybatis.tb_brand(brand_name, company_name, ordered, description, status)
+        values (#{brandName}, #{companyName}, #{ordered}, #{description}, #{status})
+    </insert>
+
+    <!--修改数据-->
+    <update id="update">
+        update mybatis.tb_brand
+        <set>
+            <if test="brandName!=null and brandName!=''">
+                brand_name=#{brandName},
+            </if>
+            <if test="companyName!=null and companyName!=''">
+                company_name=#{companyName},
+            </if>
+            <if test="ordered!=null">
+                ordered=#{ordered},
+            </if>
+            <if test="description !=null and description!=''">
+                description=#{description},
+            </if>
+            <if test="status!=null">
+                status=#{status}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+
+    <!--删除-->
+    <delete id="deleteById">
+        delete
+        from mybatis.tb_brand
+        where id = #{id};
+    </delete>
+
+    <!--批量删除-->
+    <delete id="deleteByIds">
+        delete
+        from mybatis.tb_brand
+        where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+
+</mapper>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="register" action="#">
+    <input type="text" name="username"/>
+
+    <input type="submit" name="提交"/>
+</form>
+
+</body>
+<script>
+    document.getElementById("register").onsubmit = function () {
+        //true submit;false not submit
+        return true;
+    }
+</script>
+</html>

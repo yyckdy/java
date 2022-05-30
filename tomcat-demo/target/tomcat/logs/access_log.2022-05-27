@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [27/May/2022:15:57:02 +0800] "GET /tomcat-demo HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [27/May/2022:15:57:02 +0800] "GET /tomcat-demo/ HTTP/1.1" 200 52 http-bio-8080-exec-3 36

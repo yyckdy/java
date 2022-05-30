@@ -7,16 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven-demo" />
+        <module name="tomcat-demo" />
         <module name="html_demo" />
+        <module name="request-demo" />
         <module name="css_demo" />
+        <module name="jsp-demo" />
         <module name="web-demo" />
         <module name="MyBatis" />
+        <module name="login-demo" />
         <module name="maven-project" />
         <module name="js-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Mybatis" target="18" />
+      <module name="responce-demo" target="1.7" />
+      <module name="tomcat-demo1" target="1.5" />
+      <module name="tomcat-demo2" target="18" />
+      <module name="登陆案例" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

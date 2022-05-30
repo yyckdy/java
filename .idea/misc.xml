@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jsp-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/login-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/request-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/responce-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/tomcat-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/tomcat-demo1" />
+    <file type="web" url="file://$PROJECT_DIR$/tomcat-demo2" />
     <file type="web" url="file://$PROJECT_DIR$/web-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/登陆案例" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -15,10 +23,22 @@
         <option value="$PROJECT_DIR$/html_demo/pom.xml" />
         <option value="$PROJECT_DIR$/css_demo/pom.xml" />
         <option value="$PROJECT_DIR$/js-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/tomcat-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/request-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/登陆案例/pom.xml" />
+        <option value="$PROJECT_DIR$/login-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/jsp-demo/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/tomcat-demo1/tomcat-demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/登陆案例/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="openjdk-18" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

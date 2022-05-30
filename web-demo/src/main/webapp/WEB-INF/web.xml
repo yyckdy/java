@@ -5,4 +5,19 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
+    <!--
+        Servlet 全类名
+    -->
+    <servlet>
+        <servlet-name>Demo12</servlet-name>
+        <servlet-class>web.ServletDemo12</servlet-class>
+    </servlet>
+    <!--
+        Servlet 访问路径
+    -->
+    <servlet-mapping>
+        <servlet-name>Demo12</servlet-name>
+        <url-pattern>/demo12</url-pattern>
+    </servlet-mapping>
+
 </web-app>

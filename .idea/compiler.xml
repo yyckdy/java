@@ -17,13 +17,16 @@
         <module name="login-demo" />
         <module name="maven-project" />
         <module name="js-demo" />
+        <module name="cookie-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="brand-demo" target="1.8" />
       <module name="Mybatis" target="18" />
       <module name="responce-demo" target="1.7" />
       <module name="tomcat-demo1" target="1.5" />
       <module name="tomcat-demo2" target="18" />
+      <module name="untitled" target="1.7" />
       <module name="登陆案例" target="1.7" />
     </bytecodeTargetLevel>
   </component>

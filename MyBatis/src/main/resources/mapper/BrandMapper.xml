@@ -16,12 +16,12 @@
          id, brand_name brandName, company_name companyName, ordered, description, status
      </sql>-->
 
-    <!--<select id="selectAll" resultType="pojo.Brand">
+    <!--<select id="selectAll" resultType="pojo.pojo.Brand">
         select *
         from test.tb_brand;
     </select>-->
 
-    <!-- <select id="selectAll" resultType="pojo.Brand">
+    <!-- <select id="selectAll" resultType="pojo.pojo.Brand">
          select
          <include refid="brand_column"/>
          from test.tb_brand;
@@ -37,7 +37,7 @@
         id 唯一标识
         type 映射类型
     -->
-    <resultMap id="brandResultMap" type="pojo.Brand">
+    <resultMap id="brandResultMap" type="pojo.pojo.Brand">
         <!--
             id 完成主键字段的映射
                 column 列名

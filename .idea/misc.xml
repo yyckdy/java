@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/brand-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/cookie-demo" />
     <file type="web" url="file://$PROJECT_DIR$/jsp-demo" />
     <file type="web" url="file://$PROJECT_DIR$/login-demo" />
     <file type="web" url="file://$PROJECT_DIR$/request-demo" />
@@ -9,6 +11,7 @@
     <file type="web" url="file://$PROJECT_DIR$/tomcat-demo" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat-demo1" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat-demo2" />
+    <file type="web" url="file://$PROJECT_DIR$/untitled" />
     <file type="web" url="file://$PROJECT_DIR$/web-demo" />
     <file type="web" url="file://$PROJECT_DIR$/登陆案例" />
   </component>
@@ -25,10 +28,10 @@
         <option value="$PROJECT_DIR$/js-demo/pom.xml" />
         <option value="$PROJECT_DIR$/tomcat-demo/pom.xml" />
         <option value="$PROJECT_DIR$/request-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/untitled/pom.xml" />
         <option value="$PROJECT_DIR$/登陆案例/pom.xml" />
         <option value="$PROJECT_DIR$/login-demo/pom.xml" />
         <option value="$PROJECT_DIR$/jsp-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/cookie-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

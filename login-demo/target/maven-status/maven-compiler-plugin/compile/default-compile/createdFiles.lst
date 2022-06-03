@@ -1,5 +1,14 @@
+service/BrandService.class
 web/LoginServlet.class
 mapper/UserMapper.class
-web/RegisterServlet.class
-util/SqlSessionFactoryUtils.class
+pojo/Brand.class
+web/AddServlet.class
+mapper/BrandMapper.class
+web/SelectByIdServlet.class
 pojo/User.class
+web/DeleteServlet.class
+web/RegisterServlet.class
+service/UserService.class
+web/UpdateServlet.class
+web/SelectAllServlet.class
+util/SqlSessionFactoryUtils.class

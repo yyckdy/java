@@ -17,6 +17,7 @@
         <module name="jsp-demo" />
         <module name="web-demo" />
         <module name="MyBatis" />
+        <module name="ajex-demo" />
         <module name="maven-project" />
         <module name="js-demo" />
       </profile>

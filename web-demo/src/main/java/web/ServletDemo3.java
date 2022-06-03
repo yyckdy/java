@@ -4,6 +4,9 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
+/**
+ * @author yy
+ */
 @WebServlet(urlPatterns = "/demo3", loadOnStartup = 1)
 public class ServletDemo3 implements Servlet {
     private ServletConfig config;

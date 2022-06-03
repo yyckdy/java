@@ -10,6 +10,7 @@ import java.io.IOException;
 /**
  * urlPattern配置:一个Servlet可以配置多个访问路径
  *  *精确匹配
+ * @author yy
  */
 
 @WebServlet(urlPatterns = "/user/select")

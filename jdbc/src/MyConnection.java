@@ -1,5 +1,8 @@
 import java.sql.*;
 
+/**
+ * @author yy
+ */
 public class MyConnection {
     private MyConnection() {
     }

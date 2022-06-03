@@ -3,6 +3,7 @@
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/mapper/UserMapper.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/util/SqlSessionFactoryUtils.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/web/LoginServlet.java
+/Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/web/CheckCodeServlet.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/web/AddServlet.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/pojo/Brand.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/web/RegisterServlet.java
@@ -10,5 +11,6 @@
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/web/SelectAllServlet.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/service/UserService.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/service/BrandService.java
+/Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/util/CheckCodeUtil.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/web/UpdateServlet.java
 /Users/yy/IdeaProjects/javaweb/login-demo/src/main/java/pojo/User.java

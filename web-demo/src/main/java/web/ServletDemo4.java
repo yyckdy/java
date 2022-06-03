@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * @author yy
+ */
 @WebServlet(urlPatterns = "/demo4")
 public class ServletDemo4 extends HttpServlet {
     @Override

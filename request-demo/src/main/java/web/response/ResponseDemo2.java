@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * @author yy
+ */
 @WebServlet("/resp2")
 public class ResponseDemo2 extends HttpServlet {
     @Override

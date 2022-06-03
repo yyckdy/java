@@ -9,6 +9,7 @@ import java.io.IOException;
 
 /**
  * 请求转发
+ * @author yy
  */
 @WebServlet("/req5")
 public class RequestDemo5 extends HttpServlet {

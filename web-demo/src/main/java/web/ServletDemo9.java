@@ -10,6 +10,7 @@ import java.io.IOException;
 /**
  * urlPattern配置:一个Servlet可以配置多个访问路径
  *  *扩展名匹配 :*.do
+ * @author yy
  */
 
 @WebServlet(urlPatterns = "*.do")

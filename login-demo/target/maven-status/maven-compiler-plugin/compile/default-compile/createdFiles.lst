@@ -4,7 +4,9 @@ mapper/UserMapper.class
 pojo/Brand.class
 web/AddServlet.class
 mapper/BrandMapper.class
+web/CheckCodeServlet.class
 web/SelectByIdServlet.class
+web/filter/LoginFilter.class
 pojo/User.class
 web/DeleteServlet.class
 web/RegisterServlet.class
@@ -12,3 +14,4 @@ service/UserService.class
 web/UpdateServlet.class
 web/SelectAllServlet.class
 util/SqlSessionFactoryUtils.class
+web/listner/ContextLoaderListener.class

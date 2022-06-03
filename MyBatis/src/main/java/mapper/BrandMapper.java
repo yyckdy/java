@@ -6,6 +6,9 @@ import pojo.Brand;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author yy
+ */
 public interface BrandMapper {
     /**
      * 查看所有
@@ -15,6 +18,7 @@ public interface BrandMapper {
     List<Brand> selectAll();
 
     /**
+     * 根据id查询用户
      * @param id 用户id
      * @return brand
      */
@@ -28,16 +32,24 @@ public interface BrandMapper {
      * @return 结果集
      */
 
-    //多个参数封装为Map集合
+    /**
+     * 根据条件查询
+     * @param status 状态码
+     * @param companyName 公司名
+     * @param brandName 产品名
+     * @return brand列表
+     */
     List<Brand> selectByCondition(@Param("status") int status, @Param("companyName") String companyName, @Param("brandName") String brandName);
 
     /**
+     * 按条件查询
      * @param brand Brand对象
      * @return 结果集
      */
     List<Brand> selectByCondition(Brand brand);
 
     /**
+     * 根据map对象查询
      * @param map Map对象
      * @return 结果集
      */
@@ -68,6 +80,7 @@ public interface BrandMapper {
 
     /**
      * 根据id删除
+     * @param id 用户id
      */
     void deleteById(int id);
 

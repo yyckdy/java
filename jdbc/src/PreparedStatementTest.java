@@ -7,8 +7,10 @@ import java.sql.Statement;
 
 /**
  * 登陆案例
+ *
+ * @author yy
  */
-public class preparedStatement {
+public class PreparedStatementTest {
     @Test
     public void login() {
         try (Connection connection = MyConnection.getConnection()) {
@@ -33,12 +35,13 @@ public class preparedStatement {
      * sql注入
      */
     @Test
-    public void testLogin_Inject() {
+    public void testLoginInject() {
         try (Connection connection = MyConnection.getConnection()) {
             assert connection != null;
             try (Statement statement = connection.createStatement()) {
                 String name = "hhhhhhd";
-                String password = "'or'1'='1";//sql注入
+                //sql注入
+                String password = "'or'1'='1";
                 String sql = "select*from user where name='" + name + "'and password='" + password + "'";
                 System.out.println(sql);
                 ResultSet resultSet = statement.executeQuery(sql);

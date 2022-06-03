@@ -2,12 +2,19 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 
 
-public class resultSet {
+/**
+ * @author yy
+ */
+public class MyResultSet {
     public static void main(String[] args) {
         try (Connection connection = MyConnection.getConnection()) {
             String sql = "select*from Student";
             ResultSet resultSet = (ResultSet) MyConnection.executeSql(connection, sql, true);
-            while (resultSet.next()) {
+            while (true) {
+                assert resultSet != null;
+                if (!resultSet.next()) {
+                    break;
+                }
                 System.out.println(resultSet.getString("id") + "==>" + resultSet.getString("name"));
             }
         } catch (Exception e) {

@@ -4,7 +4,13 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
+/**
+ * @author yy
+ */
 public class MyHttpServlet implements Servlet {
+    final static String GET = "GET";
+    final static String POST = "POST";
+
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
 
@@ -25,10 +31,10 @@ public class MyHttpServlet implements Servlet {
 
         //2.判断请求方式
 
-        if ("GET".equals(method)) {
+        if (GET.equals(method)) {
             //get方式的处理逻辑
             doGet(servletRequest, servletResponse);
-        } else if ("POST".equals(method)) {
+        } else if (POST.equals(method)) {
             //post方式处理逻辑
             doPost(servletRequest, servletResponse);
         }

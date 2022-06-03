@@ -6,6 +6,9 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.net.URLDecoder;
 
+/**
+ * @author yy
+ */
 @WebServlet("/bServlet")
 public class BServlet extends HttpServlet {
     @Override

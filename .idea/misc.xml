@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/brand-demo" />
     <file type="web" url="file://$PROJECT_DIR$/cookie-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/filter-demo" />
     <file type="web" url="file://$PROJECT_DIR$/jsp-demo" />
     <file type="web" url="file://$PROJECT_DIR$/login-demo" />
     <file type="web" url="file://$PROJECT_DIR$/request-demo" />
@@ -32,6 +33,7 @@
         <option value="$PROJECT_DIR$/login-demo/pom.xml" />
         <option value="$PROJECT_DIR$/jsp-demo/pom.xml" />
         <option value="$PROJECT_DIR$/cookie-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/filter-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

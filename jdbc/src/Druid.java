@@ -6,6 +6,7 @@ import java.util.Properties;
 
 /**
  * Druid 数据库连接池
+ * @author yy
  */
 public class Druid {
     public static void main(String[] args) throws Exception {

@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * mybatis 代理开发
+ * @author yy
  */
 public class Demo2 {
     public static void main(String[] args) throws IOException {

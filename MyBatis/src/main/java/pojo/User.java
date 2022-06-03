@@ -1,5 +1,8 @@
 package pojo;
 
+/**
+ * @author yy
+ */
 public class User {
     private Integer id;
     private String username;

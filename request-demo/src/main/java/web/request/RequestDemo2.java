@@ -9,13 +9,15 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Map;
 
+/**
+ * @author yy
+ */
 @WebServlet("/req2")
 public class RequestDemo2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        System.out.println("get...");
 
-        //1.获取所有参数的Map集合
+
         Map<String, String[]> map = req.getParameterMap();
         for (String key : map.keySet()) {
             //username:zhangsan

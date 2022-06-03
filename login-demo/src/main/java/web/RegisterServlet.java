@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -19,6 +20,15 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        //获取验证码
+        String checkCode = request.getParameter("checkCode");
+        HttpSession session = request.getSession();
+        String checkCode1 = (String) session.getAttribute("checkCode");
+        if (!checkCode.equalsIgnoreCase(checkCode1)) {
+            request.setAttribute("register_msg", "验证码错误");
+            request.getRequestDispatcher("/register.jsp").forward(request, response);
+            return;
+        }
         //获取用户名和密码
         String username = request.getParameter("username");
         String password = request.getParameter("password");

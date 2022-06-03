@@ -13,6 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * @author yy
+ */
 public class BrandTest {
     /**
      * 查询所有

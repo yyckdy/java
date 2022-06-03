@@ -4,6 +4,9 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
+/**
+ * @author yy
+ */
 public class URLDemo {
     public static void main(String[] args) throws UnsupportedEncodingException {
         String username="张三";

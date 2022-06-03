@@ -13,6 +13,7 @@ import java.io.IOException;
 
 /**
  * 响应字节数据
+ * @author yy
  */
 @WebServlet("/resp4")
 public class ResponseDemo4 extends HttpServlet {
@@ -20,11 +21,6 @@ public class ResponseDemo4 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (FileInputStream fileInputStream = new FileInputStream("/Users/yy/IdeaProjects/javaweb/request-demo/src/main/resources/reg_bg_min.jpg")) {
             ServletOutputStream outputStream = resp.getOutputStream();
-//            byte[] buffer = new byte[1024];
-//            int len;
-//            while ((len = fileInputStream.read(buffer)) != -1) {
-//                outputStream.write(buffer, 0, len);
-//            }
 
             IOUtils.copy(fileInputStream, outputStream);
         } catch (IOException e) {

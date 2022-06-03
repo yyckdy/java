@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+/**
+ * @author yy
+ */
 @WebServlet("/req1")
 public class RequestDemo1 extends HttpServlet {
     @Override
@@ -33,7 +36,8 @@ public class RequestDemo1 extends HttpServlet {
         System.out.println(queryString);
 
         //获取请求头
-        String agent = req.getHeader("user-agent");//浏览器版本信息
+        //浏览器版本信息
+        String agent = req.getHeader("user-agent");
         System.out.println(agent);
 
 

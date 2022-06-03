@@ -9,9 +9,9 @@ import java.io.IOException;
 /**
  * urlPattern配置:一个Servlet可以配置多个访问路径
  *  *任意匹配 : /*
+ * @author yy
  */
 
-//@WebServlet(urlPatterns = "/*")
 public class ServletDemo11 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

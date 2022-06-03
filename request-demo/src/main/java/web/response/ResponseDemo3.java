@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 
 /**
  * 响应字符数据
+ * @author yy
  */
 @WebServlet("/resp3")
 public class ResponseDemo3 extends HttpServlet {
@@ -18,7 +19,7 @@ public class ResponseDemo3 extends HttpServlet {
         resp.setContentType("text/html;charset=utf-8");
         PrintWriter writer = resp.getWriter();
         //content-type
-//        resp.setHeader("content-type","text/html");
+
         writer.write("你好");
         writer.write("<h1>aaa</h1><br><h2>bbb</h2>");
 

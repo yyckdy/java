@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * mybatis入门
+ * @author yy
  */
 public class Demo {
     public static void main(String[] args) throws IOException {

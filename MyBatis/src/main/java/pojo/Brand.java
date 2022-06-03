@@ -6,20 +6,35 @@ package pojo;
  * alt + 鼠标左键：整列编辑
  * <p>
  * 在实体类中，基本数据类型建议使用其对应的包装类型
+ *
+ * @author yy
  */
 
 public class Brand {
-    // id 主键
+    /**
+     * 用户名
+     */
     private Integer id;
-    // 品牌名称
+    /**
+     * 品牌名称
+     */
     private String brandName;
-    // 企业名称
+    /**
+     * 企业名称
+     */
+
     private String companyName;
-    // 排序字段
+    /**
+     * 排序字段
+     */
     private Integer ordered;
-    // 描述信息
+    /**
+     * 描述信息
+     */
     private String description;
-    // 状态：0：禁用  1：启用
+    /**
+     * 状态：0：禁用  1：启用
+     */
     private Integer status;
 
 

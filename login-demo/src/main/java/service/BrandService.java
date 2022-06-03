@@ -8,6 +8,9 @@ import util.SqlSessionFactoryUtils;
 
 import java.util.List;
 
+/**
+ * @author yy
+ */
 public class BrandService {
     /**
      * 查询所有
